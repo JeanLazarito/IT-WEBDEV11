@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'LEMONMILK-Medium';
+    src: url('LEMONMILK-Medium.otf');
+}
+@font-face {
+    font-family: 'Kollektif';
+    src: url('Kollektif.ttf');
+}
+@font-face {
+    font-family: 'Louis George Cafe Light';
+    src: url('Louis George Cafe Light.ttf');
+}
+@font-face {
+    font-family: 'Quicksand_Book';
+    src: url('Quicksand_Book.otf');
+}
+:root{
+    --primary: rgb(171, 89, 211);
+    --secondary: rgb(118, 161, 243);
+}
+body{
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background: radial-gradient(at 50% 40%, var(--primary), var(--secondary));
+}
+
+/* Logos */
+.logos{
+    float: left;
+    margin-left: 3%;
+    list-style: none;
+    text-align: left;
+    .UC{
+        margin-top: -30%;
+        width: 10dvw;
+        border-radius: 10em;
+    }
+    .CCS{
+        margin-top: 10%;
+        width: 10vw;
+        border-radius: 10rem;
+    }
+}
+
+/* Header */
+hr{
+    height: 1.4px;
+    background-color: antiquewhite;
+}
+h1, h3, p{
+    text-align: center;
+}
+h1{
+    font-family: 'LEMONMILK-Medium';
+    font-size: 5dvw;
+    margin-top: 4dvw;
+    margin-bottom: -7px;
+}
+h3{
+    font-family: 'Kollektif';
+    font-size: 2.7dvw;
+    text-transform: uppercase;
+}
+.head_title p{
+    font-size: 2.3dvw;
+    margin-bottom: 3dvw;
+    margin-top: -5px;
+}
+
+/* Table */
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.box table{
+    overflow-y: scroll;
+    max-height: 550px;
+    overflow-x: scroll;
+    &{
+        border-collapse: separate;
+        border: 1px solid rgb(216, 190, 157);
+        border-radius: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow-x: visible;
+        background-color: rgb(251, 243, 233);
+    }
+}
+td{
+    font-family: 'Quicksand_Book';
+    &:hover{
+        background: radial-gradient(#e5ef5775, rgba(100, 148, 237, 0.257));
+    }
+    & a{
+        text-decoration: none;
+        color: black;
+        &:hover{
+            color: antiquewhite;
+            text-shadow: 0px 0px 4px rgb(51, 100, 102);
+        }
+    }
+}
+th{
+    top: 0px;
+    background-color: rgb(244, 230, 211);
+    font-family: 'Kollektif';
+    pointer-events: none;
+    border-top: none;
+    position: sticky;
+    &:first-child{
+        width: 5%;
+    }
+    &:nth-child(2){
+        width: 25%;
+    }
+    &:nth-child(3){
+        width: 20%;
+    }
+    &:nth-child(4){
+        width: 10%;
+    }
+    &:nth-child(5){
+        width: 10%;
+    }
+    &:nth-child(6){
+        width: 35%;
+    }
+    &:hover{
+        background: radial-gradient(rgba(100, 148, 237, 0.257), #a848e453);
+    }
+}
+tr td:first-child{
+    &:hover{
+        background: radial-gradient(rgba(100, 148, 237, 0.257), #a848e453);
+    }
+}
+td, th{
+    text-align: center;
+    font-weight: bold;
+    padding: 25px;
+    border-left:solid rgb(216, 190, 157) 2px;
+    border-top:solid rgb(216, 190, 157) 2px;
+    font-size: 1.8vw;
+}
+td:first-child, th:first-child {
+    border-left: none;
+}
+
+/* Footer */
+footer{
+    margin-top: 10px;
+    height: 100px;
+    color: white;
+    font-family: 'Louis George Cafe Light';
+    display: flex;
+    font-size: 100%;
+    background-color: rgba(21, 27, 2, 0.71);
+    & ul{
+        list-style: none;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        & li{
+            padding: 5px;
+            margin-left: -25px;
+            & p{
+                text-decoration: none;
+                color: white;
+                line-height: 35px;
+                font-size: 2svw;
+                margin: auto;
+                float: inline-end;
+            }
+        }
+        & li:nth-child(2){
+            padding-left: 5dvw;
+        }
+    }
+}
+.fa-facebook{
+    color: white;
+    font-size: 35px;
+    padding-right: 20px;
+}
+.schoolyear p{
+    font-family: 'Louis George Cafe Light';
+    color: white;
+    font-size: 1.5svw;
+    padding-top: 5px;
+    text-shadow: 2px 2px 5px rgb(9, 39, 40);
+}
+
